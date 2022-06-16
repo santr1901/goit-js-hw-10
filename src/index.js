@@ -43,7 +43,7 @@ function readInput(event) {
 
 function countriesList(data) {
  const markupCountriesList = data.map(({ name, flags }) =>
-    `<li class="country-item" ><img src=${flags.svg} width=30px height=15px>
+    `<li class="country-item" ><img src=${flags.svg} width="30" height="15">
     <b>${name.official}</b>
         </li>`
     ).join("");
@@ -55,7 +55,7 @@ function countriesList(data) {
 
 function countryCard(data) {
     const markupCountryCard = data.map(({ name, capital, population, languages, flags }) =>
-        `<div><img src=${flags.svg} width=40px height=20px>
+        `<div><img src=${flags.svg} width="40" height="20">
     <strong>${name.official}</strong>
         </div>
     <p><strong>Capital:</strong> ${capital}</p>
